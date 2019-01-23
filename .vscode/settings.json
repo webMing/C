@@ -1,2 +1,4 @@
 {
+    "editor.cursorStyle": "line-thin",
+    "vim.cursorStylePerMode.normal": "line-thin"
 }
