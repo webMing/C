@@ -41,7 +41,7 @@ int main(void) {
     bit_3 ^= 0x0b;
     printf("\n bit_3 :%d \n",bit_3); // 值为 2
 
-    //右移位操作
+    //右移位操作 (注意有符号数与无符号数)
     unsigned int bit_4 = 0xa;
     printf(" \n originValue:%d,offset:%d \n",bit_4,bit_4 >> 2); //0xa,2,
 
@@ -49,12 +49,14 @@ int main(void) {
     bit_5 >>= 2;
     printf("\n bit_5 :%d \n",bit_5); //  7
 
-    //左移位操作
+    //左移位操作 （注意有符号与无符号数）
     unsigned int bit_6 = 0x3;
     printf("\n originValue:%d,offsetValue:%d",bit_6,bit_6<<2);// 3,12
 
     unsigned int bit_7 = 0x11;
     bit_7 <<= 2;
     printf("\n the value is %d \n",bit_7); //17, 68 
+
+   
     return 0;
 }
